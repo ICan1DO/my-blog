@@ -2,10 +2,10 @@ baseurl: https://ICan1DO.github.io/my-blog/
 languageCode: zh-cn
 theme: stack
 paginate: 5
-title: Trade0ff
+title: Trade0ff's Blog
 
 # Change it to your Disqus shortname before using
-disqusShortname: stack
+disqusShortname: Trade0ff
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn
@@ -20,7 +20,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:
+    favicon: img/pic.png
 
     footer:
         since: 2020
@@ -32,16 +32,16 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 如果什么也无法舍去，那什么也干不了
         avatar:
             local: true
-            src: img/avatar.png
+            src: img/pic.png
 
     article:
         math: false
         license:
             enabled: true
-            default: Licensed under CC BY-NC-SA 4.0
+            default: 转载请注明出处
 
     comments:
         enabled: true
@@ -59,7 +59,7 @@ params:
             - tag-cloud
 
         archives:
-            limit: 5
+            limit: 6
 
         tagCloud:
             limit: 10
@@ -67,7 +67,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: 董冬冬
 
             # Available values: summary, summary_large_image
             card: summary_large_image
