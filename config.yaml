@@ -41,7 +41,7 @@ params:
         math: false
         license:
             enabled: true
-            default: 转载请注明出处
+            default: 转载请注明出处，谢谢
 
     comments:
         enabled: true
