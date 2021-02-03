@@ -1,15 +1,15 @@
-baseurl: https://ICan1DO.github.io/my-blog/
-languageCode: zh-cn
-theme: stack
+baseurl: https://example.com
+languageCode: en-us
+theme: hugo-theme-stack
 paginate: 5
-title: Trade0ff
+title: Example Site
 
 # Change it to your Disqus shortname before using
-disqusShortname: stack
+disqusShortname: hugo-theme-stack
 
 # Theme i18n support
 # Available values: en, fr, id, ja, ko, pt-br, zh-cn
-DefaultContentLanguage: zh-cn
+DefaultContentLanguage: en
 
 permalinks:
     post: /p/:slug/
