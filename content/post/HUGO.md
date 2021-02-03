@@ -7,7 +7,10 @@ categories:
     - 博客
 tags:
     - Hugo
-    - Stack
 ---
 
 # HUGO
+
+使用HUGO搭建中。
+
+主题：stack
