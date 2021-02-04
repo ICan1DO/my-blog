@@ -1,4 +1,4 @@
-baseurl: https://ICan1DO.github.io/
+baseurl: https://ICan1DO.github.io/my-blog/
 languageCode: zh-cn
 theme: stack
 paginate: 5
@@ -95,7 +95,7 @@ menu:
     main:
         - identifier: home
           name: Home
-          url: /
+          url: https://ICan1DO.github.io/my-blog/
           weight: -100
           pre: home
 
