@@ -17,4 +17,4 @@ E-mail：Trade0ff@qq.com
 
 ## 用爱发电
 
-<img src="https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208135340284.png" alt="image-20210208135340284" style="zoom:50%;" />
+![image-20210208135340284](https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208135340284.png)
