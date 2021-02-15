@@ -47,10 +47,15 @@ params:
         enabled: true
         provider: utterances
         utterances:
-            repo:
+            repo: https://github.com/ICan1DO/my-blog
             issueTerm: pathname
             label:
             theme: preferred-color-scheme
+
+    reward:                            # 文章打赏
+        enable: true
+        wechat: https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208135340284.png          # 微信二维码
+        alipay: 
 
     widgets:
         enabled:
