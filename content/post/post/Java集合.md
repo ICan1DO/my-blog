@@ -5,8 +5,8 @@ date: "2021-03-14 17:14:03"
 slug: "post"
 image: ""
 categories:
-  - 编程
-	- 自学
+    - 编程
+    - 自学
 tags:
     - Java
 ---

@@ -1,12 +1,12 @@
 ---
 title: "JavaScript基础"
-description: "自学之路"
+description: "自学"
 date: "2021-03-08 17:14:03"
 slug: "post"
 image: ""
 categories:
-   - 编程
-	- 自学
+    - 编程
+    - 自学
 tags:
     - JavaScript
 ---
@@ -167,8 +167,11 @@ typeof(变量名)：获取变量的数据类型
      eval(); //将javascript字符串转化为代码执行
      ```
 
-
 ## DOM
+
+Document Object Model
+
+* Document对象
 
 * 事件
 
