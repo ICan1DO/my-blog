@@ -1,12 +1,12 @@
 ---
 title: "JavaScript基础"
-description: "自学之路"
+description: "自学"
 date: "2021-03-08 17:14:03"
 slug: "post"
 image: ""
 categories:
     - 编程
-	- 自学
+    - 自学
 tags:
     - JavaScript
 ---
