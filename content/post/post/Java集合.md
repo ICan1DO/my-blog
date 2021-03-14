@@ -1,3 +1,16 @@
+---
+title: "Java集合"
+description: "自学"
+date: "2021-03-14 17:14:03"
+slug: "post"
+image: ""
+categories:
+  - 编程
+	- 自学
+tags:
+    - Java
+---
+
 # Java集合
 
 * Collection

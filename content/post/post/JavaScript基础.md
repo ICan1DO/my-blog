@@ -5,7 +5,7 @@ date: "2021-03-08 17:14:03"
 slug: "post"
 image: ""
 categories:
-    - 编程
+   - 编程
 	- 自学
 tags:
     - JavaScript
