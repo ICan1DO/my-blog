@@ -1,7 +1,7 @@
 ---
 title: "JavaScript基础"
 description: "自学"
-date: "2021-03-08 17:14:03"
+date: "2021-03-08 13:33:03"
 slug: "post"
 image: ""
 categories:
