@@ -167,4 +167,74 @@ typeof(变量名)：获取变量的数据类型
      eval(); //将javascript字符串转化为代码执行
      ```
 
+
+## DOM
+
+* 事件
+
+  1. 获取元素
+
+     ```javascript
+     let element=document.getElementById(); //通过元素ID获取Html元素
+     element.src="img/1.jpg" //设置Html元素属性
+     ```
+
+  2. 事件绑定
+
+     ```javascript
+     //1.在Html标签元素中，指定时间属性
+     <img id="car" src="img/car.jpg" onclick="functionName">
+     //2.js获取标签元素，获取事件属性
+     element.onclick= functionName;
+     ```
+
+## BOM
+
+* Window：浏览器窗口对象
+
+  1. 创建方式
+
+     Window对象不需要创建。直接使用`window.方法名()`或者`方法名`使用。
+
+  2. 方法
+
+     ```javascript
+     alert();//弹出提示框
+     confirm();//弹出选择框，返回true或false
+     prompt();//显示用户输入对话框，返回用户输入的内容
      
+     open(); //前台新建浏览器标签页，并返回window对象
+     close(); //关闭当前浏览器标签页
+     
+     setTimeout(); //指定毫秒数后，调用函数或者表达式。参数可以是方法或者代码片段
+     clearTimeout(); //取消setTimeout()方法设置的Timeout
+     setInterval(); //按照指定的周期（毫秒）调用函数计算。参数可以是方法或者代码片段
+     setInterval(); //取消setInterval()设置的周期
+     ```
+
+  3. 可以获取下面BOM对象
+
+     history、navigator、screen、location。
+
+  4. 可获取下面DOM对象
+
+     document
+
+* Navigator：浏览器对象
+
+* Screen：屏幕对象
+
+* History：标签页历史记录对象
+
+* Location：标签页地址对象 
+
+  ```javascript
+  reload(); // 刷新当前页面
+  
+  location.href;//url地址href属性
+  ```
+
+  
+
+
+
