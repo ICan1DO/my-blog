@@ -6,7 +6,7 @@ slug: "post"
 image: ""
 categories:
   - 编程
-	- 自学
+  - 自学
 tags:
     - Java
 ---
