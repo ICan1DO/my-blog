@@ -32,7 +32,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: 如果什么也无法舍去，那什么也干不了
+        subtitle: 如果什么也无法舍去，那什么也改变不了
         avatar:
             local: true
             src: img/pic.png
