@@ -171,7 +171,47 @@ typeof(变量名)：获取变量的数据类型
 
 Document Object Model
 
-* Document对象
+* Document：文档对象
+
+  ```javascript
+  //1. 获取Element对象
+  getElementById(); //通过元素ID获取Html元素
+  getElementByTagName(); //根据元素名称获取Html元素，返回数组[]
+  getElementByClassName(); //根据Class属性值获取元素对象们。返回数组[]
+  getElementByName(); //根据Name属性值获取元素对象，返回数组
+  
+  //2. 创建其他DOM对象
+  createAttribute();
+  createComment();
+  createElement();//参数填写元素名称
+  createTextNode();
+  ```
+
+* Element：元素对象
+
+  ```javascript
+  //通过document对象获取和创建
+  setAttribute(); //设置属性
+  removeAttribute(); //移除属性
+  ```
+
+* Node：节点对象，其他五个的父对象
+
+  所有DOM对象都可以被人为是一个节点。
+
+  ```javascript
+  //方法
+  appendChild(); //添加子节点
+  removeChild(); //移除子节点
+  replaceChild(); //替换子节点
+  
+  <a href="javascript:void(0);">超链接</a> //javascript:void(0); 阻止返回值
+  
+  //属性
+  parentNode //获取当前节点的父节点
+  ```
+
+  
 
 * 事件
 
