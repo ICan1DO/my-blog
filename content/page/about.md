@@ -1,12 +1,12 @@
 ---
 
-title = "About"
-description = ""
-date = "2020-02-28"
-aliases = ["about-me", "contact"]
-author = "Trade0ff"
-license = "CC ICanIDO"
-lastmod = "2020-02-08"
+title: "About"
+description: ""
+date: "2020-02-28"
+aliases: ["about-me", "contact"]
+author: "Trade0ff"
+license: "CC ICanIDO"
+lastmod: "2020-02-08"
 
 ---
 
