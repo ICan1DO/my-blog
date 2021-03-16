@@ -1,4 +1,4 @@
-+++
+---
 
 title = "About"
 description = ""
@@ -8,7 +8,7 @@ author = "Trade0ff"
 license = "CC ICanIDO"
 lastmod = "2020-02-08"
 
-+++
+---
 
 ## 联系方式
 
