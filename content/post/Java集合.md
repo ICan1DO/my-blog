@@ -1,12 +1,12 @@
 ---
 title: "Java集合"
-description: "自学"
+description: "Java集合初学整理"
 date: "2021-03-14 17:14:03"
 slug: "Java-Set"
 image: ""
 categories:
-    - 编程
-    - 自学
+    - Coding
+    - Java
 tags:
     - Java
 ---

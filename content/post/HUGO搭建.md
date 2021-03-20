@@ -5,9 +5,9 @@ date: "2021-02-01 00:00:00+0200"
 slug: "Hugo-Setup"
 image: ""
 categories:
-    - 博客
-tags:
     - Hugo
+tags:
+    - 博客
 ---
 
 # HUGO博客搭建
