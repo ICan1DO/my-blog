@@ -2,7 +2,7 @@
 title: "Java集合"
 description: "自学"
 date: "2021-03-14 17:14:03"
-slug: "post"
+slug: "Java-Set"
 image: ""
 categories:
     - 编程
