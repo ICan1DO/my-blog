@@ -1,14 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "About"
-description: ""
-date: "2020-02-28"
-aliases: ["about-me", "contact"]
-author: "Trade0ff"
-license: "CC ICanIDO"
-lastmod: "2020-02-08"
-
-=======
 
 title: "About"
 description: ""
@@ -18,7 +8,6 @@ author: "Trade0ff"
 license: "CC ICanIDO"
 lastmod: "2020-02-08"
 
->>>>>>> b0646310ba28c26ccbba05b91f8322c6278e9a77
 ---
 
 ## 联系方式
