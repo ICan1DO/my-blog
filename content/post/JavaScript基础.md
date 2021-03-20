@@ -1,4 +1,3 @@
-<<<<<<< HEAD:content/post/JavaScript基础.md
 ---
 title: "JavaScript基础"
 description: "自学"
