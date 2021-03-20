@@ -2,8 +2,8 @@
 title: "HUGO"
 description: "博客搭建"
 slug: "HUGO"
-image: "java_logo_640.jpg"
+image: "hugo-logo-wide.svg"
 style:
-    background: "#2a9d8f"
+    background: "transparent"
     color: "#fff"
 ---
