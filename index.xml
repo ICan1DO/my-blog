@@ -7,6 +7,85 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Sun, 14 Mar 2021 17:14:03 +0000</lastBuildDate><atom:link href="https://ICan1DO.github.io/my-blog/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Java集合</title>
+        <link>https://ICan1DO.github.io/my-blog/p/post/</link>
+        <pubDate>Sun, 14 Mar 2021 17:14:03 +0000</pubDate>
+        
+        <guid>https://ICan1DO.github.io/my-blog/p/post/</guid>
+        <description>&lt;h1 id=&#34;java集合&#34;&gt;Java集合&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Collection&lt;/p&gt;
+&lt;p&gt;集合接口层级的底层。Java平台并不提供任何对Collection接口的直接实现，但是提供更加详细的对子接口的实现，诸如Set和List接口。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-Java&#34; data-lang=&#34;Java&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//基本操作方法
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//返回集合中元素个数
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;isEmpty&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//判断集合是否为空
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;contains&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//是否包含某个元素
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//添加元素，成功返回True
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;remove&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//移除元素
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;iterator&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//迭代器
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;hasNext&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//是有含有下一个元素，并且返回下一个元素
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;  
+&lt;span class=&#34;n&#34;&gt;collection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;removeAll&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Collection&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;singleton&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;());&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//Collections.singleton是一个静态工厂方法，返回一个只包含指定元素的不可变的Set集合。例如Collections.Singleton(e)方法返回只包含元素e的Set集合，然后集合c调用removeAll方法删除c中所有元素e的实例。同样，Collections.Singleton(null)方法返回只包含元素null的Set集合，然后集合c调用removeAll方法删除c中所有null元素。
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;  
+&lt;span class=&#34;n&#34;&gt;toArray&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;();&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//方法主要是作为集合和老的期望输入数组的API之间的桥梁。数组操作允许Collection中的内容被转换到一个数组中去
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Set&lt;/p&gt;
+&lt;p&gt;不能包含重复元素的集合&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SortedSet&lt;/p&gt;
+&lt;p&gt;元素按升序排列的Set。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HashSet&lt;/p&gt;
+&lt;p&gt;HashSet，将其元素存储在一个哈希表中，它具有最好的性能实现；然而它不保证迭代的顺序。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TreeSet&lt;/p&gt;
+&lt;p&gt;TreeSet，将其元素存储在一个红黑树中，按元素的值顺序排列；本质上它比HashSet要慢。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LinkedHashSet&lt;/p&gt;
+&lt;p&gt;LinkedHashSet，是作为一个哈希表实现的，用链表连接这些元素，按元素的插入顺序排列。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;List&lt;/p&gt;
+&lt;p&gt;一个有序的集合。List可以包含重复的元素，并且List中的元素是有序排列的。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ArrayList&lt;/p&gt;
+&lt;p&gt;通常有较好的性能实现&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LinkedList&lt;/p&gt;
+&lt;p&gt;在一定条件下提供较好的执行性能&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Queue&lt;/p&gt;
+&lt;p&gt;是一个其元素带有先后处理顺序的集合。队列通常（但不是必需的）以一种FIFO（先进先出）的形式管理元素。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Map&lt;/p&gt;
+&lt;p&gt;一个将键映射到值的对象。Map不能包含重复的键；每个键最多能映射到一个值（值之间可以重复）。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SortMap&lt;/p&gt;
+&lt;p&gt;映射关系按键的升序排列的Map。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>JavaScript基础</title>
         <link>https://ICan1DO.github.io/my-blog/p/post/</link>
         <pubDate>Mon, 08 Mar 2021 13:33:03 +0000</pubDate>

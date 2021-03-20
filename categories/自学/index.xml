@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 14 Mar 2021 17:14:03 +0000</lastBuildDate><atom:link href="https://ICan1DO.github.io/my-blog/categories/%E8%87%AA%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java集合</title>
-      <link>https://ICan1DO.github.io/my-blog/post/</link>
+      <link>https://ICan1DO.github.io/my-blog/p/post/</link>
       <pubDate>Sun, 14 Mar 2021 17:14:03 +0000</pubDate>
       
-      <guid>https://ICan1DO.github.io/my-blog/post/</guid>
+      <guid>https://ICan1DO.github.io/my-blog/p/post/</guid>
       <description>Java集合   Collection
 集合接口层级的底层。Java平台并不提供任何对Collection接口的直接实现，但是提供更加详细的对子接口的实现，诸如Set和List接口。
 //基本操作方法 size(); //返回集合中元素个数 isEmpty(); //判断集合是否为空 contains(); //是否包含某个元素 add(); //添加元素，成功返回True remove(); //移除元素 iterator(); //迭代器 hasNext(); //是有含有下一个元素，并且返回下一个元素  collection.removeAll(Collection.singleton()); //Collections.singleton是一个静态工厂方法，返回一个只包含指定元素的不可变的Set集合。例如Collections.Singleton(e)方法返回只包含元素e的Set集合，然后集合c调用removeAll方法删除c中所有元素e的实例。同样，Collections.Singleton(null)方法返回只包含元素null的Set集合，然后集合c调用removeAll方法删除c中所有null元素。  toArray(); //方法主要是作为集合和老的期望输入数组的API之间的桥梁。数组操作允许Collection中的内容被转换到一个数组中去   Set
