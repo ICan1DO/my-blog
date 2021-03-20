@@ -2,7 +2,7 @@
 title: "Hugo博客搭建"
 description: "初学者尝试自己搭建，主要记录一些踩过的坑。"
 date: "2021-02-01 00:00:00+0200"
-slug: "post"
+slug: "Hugo-Setup"
 image: ""
 categories:
     - 博客
