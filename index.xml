@@ -350,6 +350,85 @@
 &lt;/ul&gt;
 </description>
         </item>
+        <item>
+        <title>Hugo博客搭建</title>
+        <link>https://ICan1DO.github.io/my-blog/p/post/</link>
+        <pubDate>Mon, 01 Feb 2021 00:00:00 +0200</pubDate>
+        
+        <guid>https://ICan1DO.github.io/my-blog/p/post/</guid>
+        <description>&lt;h1 id=&#34;hugo博客搭建&#34;&gt;HUGO博客搭建&lt;/h1&gt;
+&lt;p&gt;本博客搭建参照少数派&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/u/elizen/updates&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Elizen&lt;/a&gt;的文章&lt;a class=&#34;link&#34; href=&#34;https://sspai.com/post/64639&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;《使用 Hugo 从 0 到 1 搭建个人博客》&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HUGO主题下载：&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;主题&lt;/a&gt;	本博客使用的主题为：&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/hugo-theme-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;stack&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;更换博客主题&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;按照上述文章搭建完成后，如果需要更换主题，把下载完成的主题解压至博客文件路径，目录&lt;code&gt;*/temes&lt;/code&gt;下，文件夹名称可修改，这里博主改为&lt;code&gt;stack&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208141813462.png&#34; alt=&#34;image-20210208141813462&#34;  /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开主题文件夹，进入&lt;code&gt;exampleSite&lt;/code&gt;，将文件夹内的所有文件复制到伯博客文件夹主目录下并替换（红框中的文件建议必选，其中&lt;code&gt;congfig.yaml&lt;/code&gt;主题配置文件）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208142119064.png&#34; alt=&#34;image-20210208142119064&#34;  /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;回到主目录删除除&lt;code&gt;congfig.yaml&lt;/code&gt;外的其他格式配置文件。然后打开文件该文件，修改博客地址、主题文件夹名称（博主为&lt;code&gt;stack&lt;/code&gt;）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208142459809.png&#34; alt=&#34;image-20210208142459809&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;其余配置文件信息，参考主题说明文档。stack主题文档地址：https://docs.stack.jimmycai.com/v/zh-cn/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改完成后，先保存、上传。等待自动化运行完成后，打开博客地址，如果没有问题，即完成博客创建。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果打开存在未编码完全的情况，请参照下面的步骤。&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;我们打卡GitHub博客项目，打开&lt;code&gt;.github/workflows&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208143255123.png&#34; alt=&#34;image-20210208143255123&#34;  /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开&lt;code&gt;***.yml&lt;/code&gt;文件，也就是你之前创建的自动化文件。添加&lt;code&gt;extended: true&lt;/code&gt;，因为部分主题需要用到hugo的extented版本才可编译成功。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208143949046.png&#34; alt=&#34;image-20210208143949046&#34;  /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;name: Update Hugo
+     
+on:
+  push:
+    branches:
+      - master   # master 更新触发
+     
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+     
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: latest
+          extended: true
+     
+      - name: Build 
+        run: hugo
+     
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.personal_token }} # 填写你自己的 personal_token
+          PUBLISH_BRANCH: gh-pages  # 推送到当前 gh-pages 分支
+          PUBLISH_DIR: ./public  # hugo 生成到 public 作为跟目录
+          commit_message: ${{ github.event.head_commit.message }}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;最后，重新运行workflow，再次打开博客即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
         
     </channel>
 </rss>

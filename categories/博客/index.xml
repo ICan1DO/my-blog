@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0200</lastBuildDate><atom:link href="https://ICan1DO.github.io/my-blog/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo博客搭建</title>
-      <link>https://ICan1DO.github.io/my-blog/hogo-setup/post/</link>
+      <link>https://ICan1DO.github.io/my-blog/p/post/</link>
       <pubDate>Mon, 01 Feb 2021 00:00:00 +0200</pubDate>
       
-      <guid>https://ICan1DO.github.io/my-blog/hogo-setup/post/</guid>
+      <guid>https://ICan1DO.github.io/my-blog/p/post/</guid>
       <description>HUGO博客搭建 本博客搭建参照少数派Elizen的文章《使用 Hugo 从 0 到 1 搭建个人博客》
 HUGO主题下载：主题	本博客使用的主题为：stack
   更换博客主题
