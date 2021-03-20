@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>自学 on Trade0ff&#39;s Blog</title>
-    <link>https://ICan1DO.github.io/my-blog/categories/%E8%87%AA%E5%AD%A6/</link>
-    <description>Recent content in 自学 on Trade0ff&#39;s Blog</description>
+    <title>Coding on Trade0ff&#39;s Blog</title>
+    <link>https://ICan1DO.github.io/my-blog/categories/coding/</link>
+    <description>Recent content in Coding on Trade0ff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 14 Mar 2021 17:14:03 +0000</lastBuildDate><atom:link href="https://ICan1DO.github.io/my-blog/categories/%E8%87%AA%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Mar 2021 17:14:03 +0000</lastBuildDate><atom:link href="https://ICan1DO.github.io/my-blog/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java集合</title>
       <link>https://ICan1DO.github.io/my-blog/p/java-set/</link>

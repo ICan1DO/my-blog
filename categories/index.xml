@@ -8,45 +8,18 @@
     <language>zh-cn</language>
     <lastBuildDate>Sun, 14 Mar 2021 17:14:03 +0000</lastBuildDate><atom:link href="https://ICan1DO.github.io/my-blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>编程</title>
-      <link>https://ICan1DO.github.io/my-blog/categories/%E7%BC%96%E7%A8%8B/</link>
+      <title>Coding</title>
+      <link>https://ICan1DO.github.io/my-blog/categories/coding/</link>
       <pubDate>Sun, 14 Mar 2021 17:14:03 +0000</pubDate>
       
-      <guid>https://ICan1DO.github.io/my-blog/categories/%E7%BC%96%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>自学</title>
-      <link>https://ICan1DO.github.io/my-blog/categories/%E8%87%AA%E5%AD%A6/</link>
-      <pubDate>Sun, 14 Mar 2021 17:14:03 +0000</pubDate>
-      
-      <guid>https://ICan1DO.github.io/my-blog/categories/%E8%87%AA%E5%AD%A6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>博客</title>
-      <link>https://ICan1DO.github.io/my-blog/categories/%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Mon, 01 Feb 2021 00:00:00 +0200</pubDate>
-      
-      <guid>https://ICan1DO.github.io/my-blog/categories/%E5%8D%9A%E5%AE%A2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>HUGO</title>
-      <link>https://ICan1DO.github.io/my-blog/categories/hugo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ICan1DO.github.io/my-blog/categories/hugo/</guid>
+      <guid>https://ICan1DO.github.io/my-blog/categories/coding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
       <link>https://ICan1DO.github.io/my-blog/categories/java/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 14 Mar 2021 17:14:03 +0000</pubDate>
       
       <guid>https://ICan1DO.github.io/my-blog/categories/java/</guid>
       <description></description>
@@ -55,9 +28,18 @@
     <item>
       <title>JavaScript</title>
       <link>https://ICan1DO.github.io/my-blog/categories/javascript/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Mar 2021 13:33:03 +0000</pubDate>
       
       <guid>https://ICan1DO.github.io/my-blog/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HUGO</title>
+      <link>https://ICan1DO.github.io/my-blog/categories/hugo/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0200</pubDate>
+      
+      <guid>https://ICan1DO.github.io/my-blog/categories/hugo/</guid>
       <description></description>
     </item>
     

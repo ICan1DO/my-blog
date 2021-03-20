@@ -5,6 +5,24 @@
     <link>https://ICan1DO.github.io/my-blog/categories/javascript/</link>
     <description>Recent content in JavaScript on Trade0ff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language><atom:link href="https://ICan1DO.github.io/my-blog/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 08 Mar 2021 13:33:03 +0000</lastBuildDate><atom:link href="https://ICan1DO.github.io/my-blog/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript基础</title>
+      <link>https://ICan1DO.github.io/my-blog/p/javascrip-base/</link>
+      <pubDate>Mon, 08 Mar 2021 13:33:03 +0000</pubDate>
+      
+      <guid>https://ICan1DO.github.io/my-blog/p/javascrip-base/</guid>
+      <description>JavaScript基础 数据类型  原始数据类型（基本数据类型）  number：数字。整数/小数/NaN（not a number） string：字符串 boolean：true/false null：false undefined：false   引用数据类型：对象  变量 var 变量名 = 初始化值;
+typeof(变量名)：获取变量的数据类型
+类型转换  number：0或NaN为false，其他为true string：“”为false，其他为true null：false undefined：false 对象：所有对象都为true  对象   Function方法对象
+  创建方式
+//形参不需要填写数据类型，返回值也可以省略 let fun1=new function(&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;,&amp;#34;alert(a+b)&amp;#34;); //第一种方式 function fun2(a,b){ alert(a+b); }; //第二种方式 let fun3=function fun(a,b){ alert(a+b); }; //第三种方式   重名及参数相同：方法重名且参数相同，方法会被覆盖。
+  方法调用：方法调用只与方法的名称有关，和参数列表无关。
+  传入参数：JS方法声明中有一个隐藏的内置对象（数组：arguments），封装所得的实际参数。
+    Array数组对象
+  创建方式</description>
+    </item>
+    
   </channel>
 </rss>
