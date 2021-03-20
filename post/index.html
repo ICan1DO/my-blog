@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='初学者尝试自己搭建，主要记录一些踩过的坑。'><title>Hugo博客搭建</title>
+
+<link rel='canonical' href='https://ICan1DO.github.io/my-blog/post/'>
+
+<link rel="stylesheet" href="/my-blog/scss/style.min.css"><meta property='og:title' content='Hugo博客搭建'>
+<meta property='og:description' content='初学者尝试自己搭建，主要记录一些踩过的坑。'>
+<meta property='og:url' content='https://ICan1DO.github.io/my-blog/post/'>
+<meta property='og:site_name' content='Trade0ff&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='' /><meta property='article:tag' content='JavaScript' /><meta property='article:published_time' content='2021-03-08T13:33:03&#43;00:00'/><meta property='article:modified_time' content='2021-03-08T13:33:03&#43;00:00'/>
+<meta name="twitter:site" content="董冬冬"><meta name="twitter:title" content="Hugo博客搭建">
+<meta name="twitter:description" content="初学者尝试自己搭建，主要记录一些踩过的坑。">
+    <link rel="shortcut icon" href="icons/messages.svg" />
+
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "<https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap>";
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/my-blog/img/pic_hue9c1f45c61fe4d5e9f53a6542ac1b807_92997_300x0_resize_box_2.png" width="300"
+                            height="312" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://ICan1DO.github.io/my-blog/">Trade0ff&#39;s Blog</a></h1>
+        <h2 class="site-description">如果什么也无法舍去，那什么也改变不了</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/my-blog'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>首页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/my-blog/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/my-blog/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/my-blog/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>暗色模式</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/my-blog/categories/%E5%8D%9A%E5%AE%A2/" >
+                博客
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/my-blog/post/">Hugo博客搭建</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        初学者尝试自己搭建，主要记录一些踩过的坑。
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Feb 01, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h1 id="javascript基础">JavaScript基础</h1>
+<h2 id="数据类型">数据类型</h2>
+<ul>
+<li>原始数据类型（基本数据类型）
+<ol>
+<li>number：数字。整数/小数/NaN（not a number）</li>
+<li>string：字符串</li>
+<li>boolean：true/false</li>
+<li>null：false</li>
+<li>undefined：false</li>
+</ol>
+</li>
+<li>引用数据类型：对象</li>
+</ul>
+<h2 id="变量">变量</h2>
+<p>var 变量名 = 初始化值;</p>
+<p>typeof(变量名)：获取变量的数据类型</p>
+<h2 id="类型转换">类型转换</h2>
+<ol>
+<li>number：0或NaN为false，其他为true</li>
+<li>string：“”为false，其他为true</li>
+<li>null：false</li>
+<li>undefined：false</li>
+<li>对象：所有对象都为true</li>
+</ol>
+<h2 id="对象">对象</h2>
+<ul>
+<li>
+<p>Function方法对象</p>
+<ol>
+<li>
+<p>创建方式</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//形参不需要填写数据类型，返回值也可以省略
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">fun1</span><span class="o">=</span><span class="k">new</span> <span class="kd">function</span><span class="p">(</span><span class="s2">&#34;a&#34;</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">,</span><span class="s2">&#34;alert(a+b)&#34;</span><span class="p">);</span> <span class="c1">//第一种方式
+</span><span class="c1"></span><span class="kd">function</span> <span class="nx">fun2</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">);</span>
+<span class="p">};</span> <span class="c1">//第二种方式
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">fun3</span><span class="o">=</span><span class="kd">function</span> <span class="nx">fun</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">);</span>
+<span class="p">};</span> <span class="c1">//第三种方式
+</span></code></pre></div></li>
+<li>
+<p>重名及参数相同：方法重名且参数相同，方法会被覆盖。</p>
+</li>
+<li>
+<p>方法调用：方法调用只与方法的名称有关，和参数列表无关。</p>
+</li>
+<li>
+<p>传入参数：JS方法声明中有一个隐藏的内置对象（数组：arguments），封装所得的实际参数。</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Array数组对象</p>
+<ol>
+<li>
+<p>创建方式</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//数组长度可变，若没有赋值，则为undefined
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">arr1</span><span class="o">=</span><span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span> <span class="c1">//1,2,3
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">arr2</span><span class="o">=</span><span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span> <span class="c1">//,,,
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">arr3</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">&#34;abc&#34;</span><span class="p">,</span><span class="kc">true</span><span class="p">];</span><span class="c1">//1,2,3,abc,true
+</span></code></pre></div></li>
+<li>
+<p>方法</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">arr1</span><span class="p">.</span><span class="nx">join</span><span class="p">();</span> <span class="c1">//join(参数):按照指定字符串拼接数组。默认&#34;,&#34;
+</span><span class="c1"></span><span class="nx">arr2</span><span class="p">.</span><span class="nx">push</span><span class="p">();</span> <span class="c1">//push()：向数组末尾添加元素。
+</span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>Data日期对象</p>
+<ol>
+<li>
+<p>创建方式</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">date</span><span class="o">=</span><span class="k">new</span> <span class="nb">Date</span><span class="p">();</span><span class="c1">//默认美国时间格式
+</span></code></pre></div></li>
+<li>
+<p>方法</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">toLocaleString</span><span class="p">();</span><span class="c1">//toLocaleString()：转换为当地时间格式
+</span><span class="c1"></span><span class="nx">getTime</span><span class="p">();</span><span class="c1">//获取毫秒值，与1970年1月1日比较
+</span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>Math数学对象</p>
+<ol>
+<li>
+<p>创建方式</p>
+<p>不需要创建，直接使用<code>Math.[方法名]</code></p>
+</li>
+<li>
+<p>方法</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">;</span><span class="c1">//获取π值
+</span><span class="c1"></span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">();</span><span class="c1">//反悔[o,1)之前的随机数
+</span><span class="c1"></span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="mf">3.14</span><span class="p">);</span><span class="c1">//3 四舍五入
+</span><span class="c1"></span><span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="mf">3.14</span><span class="p">);</span><span class="c1">//4 向上取整
+</span><span class="c1"></span><span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="mf">3.14</span><span class="p">);</span><span class="c1">//3 向下取整
+</span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>RegExp正则表达式对象</p>
+<p><strong>正则表达式语法</strong></p>
+<ol>
+<li>
+<p>单个字符：[]</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">[</span><span class="nx">a</span><span class="p">]</span> <span class="c1">//字符a
+</span><span class="c1"></span><span class="p">[</span><span class="nx">ab</span><span class="p">]</span> <span class="c1">//a或b
+</span><span class="c1"></span><span class="p">[</span><span class="nx">a</span><span class="o">-</span><span class="nx">z</span><span class="p">]</span> <span class="c1">//任意小写字符
+</span><span class="c1"></span><span class="err">\</span><span class="nx">d</span> <span class="c1">//单个数字，同[0-9]
+</span><span class="c1"></span><span class="err">\</span><span class="nx">w</span> <span class="c1">//单个单词字符，同[a-zA-z0-9]
+</span></code></pre></div></li>
+<li>
+<p>量词字符</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">?</span> <span class="c1">//表示出现0次或1次
+</span><span class="c1"></span><span class="o">*</span> <span class="c1">//表示出现0次或多次
+</span><span class="c1"></span><span class="o">+</span> <span class="c1">//表示出现1次或多次
+</span><span class="c1"></span><span class="p">{</span><span class="nx">m</span><span class="p">,</span><span class="nx">n</span><span class="p">}</span> <span class="c1">//表示 m&lt;=次数&lt;=n
+</span></code></pre></div></li>
+</ol>
+<p><strong>正则表达式对象</strong></p>
+<ol>
+<li>
+<p>创建方式</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">reg</span><span class="o">=</span><span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="s2">&#34;^\w{6,12}$&#34;</span><span class="p">);</span> <span class="c1">//表示6-12个字符
+</span><span class="c1"></span><span class="kd">let</span> <span class="nx">reg</span><span class="o">=</span><span class="sr">/^\w{6,12}$/</span><span class="p">;</span>
+</code></pre></div></li>
+<li>
+<p>方法</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">reg</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&#34;Tred0ff&#34;</span><span class="p">);</span> <span class="c1">//测试字符串是否符合定义规则。
+</span></code></pre></div></li>
+</ol>
+</li>
+<li>
+<p>Global对象</p>
+<p>全局对象，其中封装的方法不需要对象即可直接运行。</p>
+<ol>
+<li>
+<p>方法</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">encodeURI</span><span class="p">();</span><span class="c1">//URL编码，一般只编码汉字
+</span><span class="c1"></span><span class="nb">decodeURI</span><span class="p">();</span><span class="c1">//URL解码
+</span><span class="c1"></span>     
+<span class="nx">encodeURICompare</span><span class="p">();</span><span class="c1">//URL编码,编码的字符更多，字符也编码
+</span><span class="c1"></span><span class="nx">decodeURICompare</span><span class="p">();</span><span class="c1">//URL解码
+</span><span class="c1"></span>     
+<span class="nb">parseInt</span><span class="p">();</span> <span class="c1">//逐一判断每一个字符是否是数字，知道不是数字为止。将前面数字转行为number
+</span><span class="c1"></span>     
+<span class="nb">isNaN</span><span class="p">();</span> <span class="c1">//判断传入值是否是NaN
+</span><span class="c1"></span>     
+<span class="nb">eval</span><span class="p">();</span> <span class="c1">//将javascript字符串转化为代码执行
+</span></code></pre></div></li>
+</ol>
+</li>
+</ul>
+<h2 id="dom">DOM</h2>
+<p>Document Object Model</p>
+<ul>
+<li>
+<p>Document：文档对象</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//1. 获取Element对象
+</span><span class="c1"></span><span class="nx">getElementById</span><span class="p">();</span> <span class="c1">//通过元素ID获取Html元素
+</span><span class="c1"></span><span class="nx">getElementByTagName</span><span class="p">();</span> <span class="c1">//根据元素名称获取Html元素，返回数组[]
+</span><span class="c1"></span><span class="nx">getElementByClassName</span><span class="p">();</span> <span class="c1">//根据Class属性值获取元素对象们。返回数组[]
+</span><span class="c1"></span><span class="nx">getElementByName</span><span class="p">();</span> <span class="c1">//根据Name属性值获取元素对象，返回数组
+</span><span class="c1"></span>  
+<span class="c1">//2. 创建其他DOM对象
+</span><span class="c1"></span><span class="nx">createAttribute</span><span class="p">();</span>
+<span class="nx">createComment</span><span class="p">();</span>
+<span class="nx">createElement</span><span class="p">();</span><span class="c1">//参数填写元素名称
+</span><span class="c1"></span><span class="nx">createTextNode</span><span class="p">();</span>
+</code></pre></div></li>
+<li>
+<p>Element：元素对象</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//通过document对象获取和创建
+</span><span class="c1"></span><span class="nx">setAttribute</span><span class="p">();</span> <span class="c1">//设置属性
+</span><span class="c1"></span><span class="nx">removeAttribute</span><span class="p">();</span> <span class="c1">//移除属性
+</span></code></pre></div></li>
+<li>
+<p>Node：节点对象，其他五个的父对象</p>
+<p>所有DOM对象都可以被人为是一个节点。</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//方法
+</span><span class="c1"></span><span class="nx">appendChild</span><span class="p">();</span> <span class="c1">//添加子节点
+</span><span class="c1"></span><span class="nx">removeChild</span><span class="p">();</span> <span class="c1">//移除子节点
+</span><span class="c1"></span><span class="nx">replaceChild</span><span class="p">();</span> <span class="c1">//替换子节点
+</span><span class="c1"></span>  
+<span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;javascript:void(0);&#34;</span><span class="o">&gt;</span><span class="nx">超链接</span><span class="o">&lt;</span><span class="sr">/a&gt; /</span><span class="o">/</span><span class="nx">javascript</span><span class="o">:</span><span class="k">void</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="nx">阻止返回值</span>
+  
+<span class="c1">//属性
+</span><span class="c1"></span><span class="nx">parentNode</span> <span class="c1">//获取当前节点的父节点
+</span></code></pre></div></li>
+<li>
+<p>事件</p>
+<ol>
+<li>
+<p>获取元素</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">element</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">();</span> <span class="c1">//通过元素ID获取Html元素
+</span><span class="c1"></span><span class="nx">element</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="s2">&#34;img/1.jpg&#34;</span> <span class="c1">//设置Html元素属性
+</span></code></pre></div></li>
+<li>
+<p>事件绑定</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//1.在Html标签元素中，指定时间属性
+</span><span class="c1"></span><span class="o">&lt;</span><span class="nx">img</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&#34;car&#34;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;img/car.jpg&#34;</span> <span class="nx">onclick</span><span class="o">=</span><span class="s2">&#34;functionName&#34;</span><span class="o">&gt;</span>
+<span class="c1">//2.js获取标签元素，获取事件属性
+</span><span class="c1"></span><span class="nx">element</span><span class="p">.</span><span class="nx">onclick</span><span class="o">=</span> <span class="nx">functionName</span><span class="p">;</span>
+</code></pre></div></li>
+</ol>
+</li>
+</ul>
+<h2 id="bom">BOM</h2>
+<ul>
+<li>
+<p>Window：浏览器窗口对象</p>
+<ol>
+<li>
+<p>创建方式</p>
+<p>Window对象不需要创建。直接使用<code>window.方法名()</code>或者<code>方法名</code>使用。</p>
+</li>
+<li>
+<p>方法</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">alert</span><span class="p">();</span><span class="c1">//弹出提示框
+</span><span class="c1"></span><span class="nx">confirm</span><span class="p">();</span><span class="c1">//弹出选择框，返回true或false
+</span><span class="c1"></span><span class="nx">prompt</span><span class="p">();</span><span class="c1">//显示用户输入对话框，返回用户输入的内容
+</span><span class="c1"></span>     
+<span class="nx">open</span><span class="p">();</span> <span class="c1">//前台新建浏览器标签页，并返回window对象
+</span><span class="c1"></span><span class="nx">close</span><span class="p">();</span> <span class="c1">//关闭当前浏览器标签页
+</span><span class="c1"></span>     
+<span class="nx">setTimeout</span><span class="p">();</span> <span class="c1">//指定毫秒数后，调用函数或者表达式。参数可以是方法或者代码片段
+</span><span class="c1"></span><span class="nx">clearTimeout</span><span class="p">();</span> <span class="c1">//取消setTimeout()方法设置的Timeout
+</span><span class="c1"></span><span class="nx">setInterval</span><span class="p">();</span> <span class="c1">//按照指定的周期（毫秒）调用函数计算。参数可以是方法或者代码片段
+</span><span class="c1"></span><span class="nx">setInterval</span><span class="p">();</span> <span class="c1">//取消setInterval()设置的周期
+</span></code></pre></div></li>
+<li>
+<p>可以获取下面BOM对象</p>
+<p>history、navigator、screen、location。</p>
+</li>
+<li>
+<p>可获取下面DOM对象</p>
+<p>document</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Navigator：浏览器对象</p>
+</li>
+<li>
+<p>Screen：屏幕对象</p>
+</li>
+<li>
+<p>History：标签页历史记录对象</p>
+</li>
+<li>
+<p>Location：标签页地址对象</p>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">reload</span><span class="p">();</span> <span class="c1">// 刷新当前页面
+</span><span class="c1"></span>  
+<span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">;</span><span class="c1">//url地址href属性
+</span></code></pre></div></li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/my-blog/tags/javascript/">JavaScript</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>转载请注明出处，谢谢</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+     
+        
+    <script src="https://utteranc.es/client.js" 
+        repo="ICan1DO/my-blog"
+        issue-term="pathname"
+        theme="preferred-color-scheme" 
+        
+        crossorigin="anonymous" 
+        async>
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${e.detail}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Trade0ff&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/my-blog/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
