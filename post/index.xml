@@ -38,10 +38,10 @@ LinkedHashSet，是作为一个哈希表实现的，用链表连接这些元素�
     
     <item>
       <title>JavaScript基础</title>
-      <link>https://ICan1DO.github.io/my-blog/p/post/</link>
+      <link>https://ICan1DO.github.io/my-blog/p/javascrip-base/</link>
       <pubDate>Mon, 08 Mar 2021 13:33:03 +0000</pubDate>
       
-      <guid>https://ICan1DO.github.io/my-blog/p/post/</guid>
+      <guid>https://ICan1DO.github.io/my-blog/p/javascrip-base/</guid>
       <description>JavaScript基础 数据类型  原始数据类型（基本数据类型）  number：数字。整数/小数/NaN（not a number） string：字符串 boolean：true/false null：false undefined：false   引用数据类型：对象  变量 var 变量名 = 初始化值;
 typeof(变量名)：获取变量的数据类型
 类型转换  number：0或NaN为false，其他为true string：“”为false，其他为true null：false undefined：false 对象：所有对象都为true  对象   Function方法对象
