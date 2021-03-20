@@ -1,4 +1,3 @@
-<<<<<<< HEAD:content/post/Java集合.md
 ---
 title: "Java集合"
 description: "自学"
