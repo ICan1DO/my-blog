@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='联系方式 GitHub：Trade0ff
-E-mail：Trade0ff@qq.com
-用爱发电 '><title>About</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Tomcat部署简介'><title>Tomcat项目部署</title>
 
-<link rel='canonical' href='https://ICan1DO.github.io/my-blog/about/'>
+<link rel='canonical' href='https://ICan1DO.github.io/my-blog/p/tomcat-setup-webapps/'>
 
-<link rel="stylesheet" href="/my-blog/scss/style.min.css"><meta property='og:title' content='About'>
-<meta property='og:description' content='联系方式 GitHub：Trade0ff
-E-mail：Trade0ff@qq.com
-用爱发电 '>
-<meta property='og:url' content='https://ICan1DO.github.io/my-blog/about/'>
+<link rel="stylesheet" href="/my-blog/scss/style.min.css"><meta property='og:title' content='Tomcat项目部署'>
+<meta property='og:description' content='Tomcat部署简介'>
+<meta property='og:url' content='https://ICan1DO.github.io/my-blog/p/tomcat-setup-webapps/'>
 <meta property='og:site_name' content='Trade0ff&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:published_time' content='2020-02-28T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-02-08T00:00:00&#43;00:00'/>
-<meta name="twitter:site" content="董冬冬"><meta name="twitter:title" content="About">
-<meta name="twitter:description" content="联系方式 GitHub：Trade0ff
-E-mail：Trade0ff@qq.com
-用爱发电 ">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Java' /><meta property='article:published_time' content='2021-04-01T20:36:13&#43;00:00'/><meta property='article:modified_time' content='2021-04-01T20:36:13&#43;00:00'/>
+<meta name="twitter:site" content="董冬冬"><meta name="twitter:title" content="Tomcat项目部署">
+<meta name="twitter:description" content="Tomcat部署简介">
     <link rel="shortcut icon" href="icons/message.ico" />
 
 <style>
@@ -38,7 +32,7 @@ E-mail：Trade0ff@qq.com
 		}());
 </script>
     </head>
-    <body class="article-page keep-sidebar">
+    <body class="">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -60,7 +54,7 @@ E-mail：Trade0ff@qq.com
             document.body.dataset.scheme = 'light';
         }
     })();
-</script><div class="container main-container flex on-phone--column extended ">
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
             <aside class="sidebar left-sidebar sticky">
     <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
         <span class="hamburger-box">
@@ -193,16 +187,45 @@ E-mail：Trade0ff@qq.com
 </aside>
 
             <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://ICan1DO.github.io/my-blog/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
     <article class="main-article">
     <header class="article-header">
 
     <div class="article-details">
     
+    <header class="article-category">
+        
+            <a href="/my-blog/categories/coding/" >
+                Coding
+            </a>
+        
+            <a href="/my-blog/categories/java/" style="background-color: transparent; color: #ffffff;">
+                Java
+            </a>
+        
+    </header>
+    
 
     <h2 class="article-title">
-        <a href="/my-blog/about/">About</a>
+        <a href="/my-blog/p/tomcat-setup-webapps/">Tomcat项目部署</a>
     </h2>
 
+    
+    <h3 class="article-subtitle">
+        Tomcat部署简介
+    </h3>
     <footer class="article-time">
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
@@ -212,23 +235,53 @@ E-mail：Trade0ff@qq.com
 
 
 
-        <time class="article-time--published">Feb 28, 2020</time>
+        <time class="article-time--published">Apr 01, 2021</time>
     </footer></div>
 </header>
 
     <section class="article-content">
-    <h2 id="联系方式">联系方式</h2>
-<p>GitHub：<a class="link" href="https://github.com/ICan1DO"  target="_blank" rel="noopener"
-    >Trade0ff</a></p>
-<p>E-mail：Trade0ff@qq.com</p>
-<h2 id="用爱发电">用爱发电</h2>
-<p><img src="https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208135340284.png" alt="image-20210208135340284"  /></p>
-
+    <h1 id="tomcat项目部署">Tomcat项目部署</h1>
+<h2 id="部署方式">部署方式</h2>
+<ol>
+<li>
+<p>直接将项目文件放置在<code>webapps</code>目录下。</p>
+<ul>
+<li>/example：项目的访问路径&ndash;&gt;虚拟目录</li>
+<li>可将项目打包成<code>.war</code>格式，然后放置本目录下，Tomcat会自动解压</li>
+</ul>
+</li>
+<li>
+<p>配置<code>conf/sever.xml</code></p>
+<p>在<code>&lt;Host&gt;</code>标签中配置</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;Context</span> <span class="na">docBase=</span><span class="s">&#34;C:\example&#34;</span> <span class="na">path=</span><span class="s">&#34;/example&#34;</span><span class="nt">&gt;</span>
+<span class="c">&lt;!--docBase:项目存放的路径
+</span><span class="c">	path:虚拟目录--&gt;</span>
+</code></pre></div></li>
+<li>
+<p>在<code>conf/Catalina/localhost</code>中创建xml文件（例如：<code>example.xml</code>）。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;Context</span> <span class="na">docBase=</span><span class="s">&#34;C:\example&#34;</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!--虚拟目录：xml的文件名称(example)--&gt;</span>
+</code></pre></div></li>
+</ol>
+<h2 id="项目目录简介">项目目录简介</h2>
+<p>含静态项目和动态项目</p>
+<pre tabindex="0"><code>example //项目根目录
+	|_ WEB-INF
+		|_ web.xml //web项目核心配置文件
+		|_ classes //放置字节码文件的目录
+		|_ lib //放置依赖的jar包
+</code></pre>
 </section>
 
 
     <footer class="article-footer">
     
+    <section class="article-tags">
+        
+            <a href="/my-blog/tags/java/">Java</a>
+        
+    </section>
+
 
     
     <section class="article-copyright">
@@ -240,26 +293,51 @@ E-mail：Trade0ff@qq.com
 
 
 
-        <span>CC ICanIDO</span>
+        <span>转载请注明出处，谢谢</span>
     </section>
-    <section class="article-time">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <span class="article-time--modified">
-            最后更新于 Feb 08, 2020 00:00 UTC
-        </span>
-    </section></footer>
+    </footer>
 
     
 </article>
 
-     
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/my-blog/p/java-set/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Java集合</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/my-blog/p/javascrip-base/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">JavaScript基础</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
         
     <script src="https://utteranc.es/client.js" 
         repo="ICan1DO/my-blog"
@@ -307,8 +385,6 @@ E-mail：Trade0ff@qq.com
         Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.0.1">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
-
-    
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
     
@@ -377,7 +453,6 @@ E-mail：Trade0ff@qq.com
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
-
             </main>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"

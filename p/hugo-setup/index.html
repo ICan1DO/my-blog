@@ -70,7 +70,7 @@
                     
                     
                         
-                        <img src="/my-blog/img/pic_hue9c1f45c61fe4d5e9f53a6542ac1b807_92997_300x0_resize_box_2.png" width="300"
+                        <img src="/my-blog/img/pic_hue9c1f45c61fe4d5e9f53a6542ac1b807_92997_300x0_resize_box_3.png" width="300"
                             height="312" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -271,28 +271,28 @@
 <li>
 <p>打开<code>***.yml</code>文件，也就是你之前创建的自动化文件。添加<code>extended: true</code>，因为部分主题需要用到hugo的extented版本才可编译成功。</p>
 <p><img src="https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208143949046.png" alt="image-20210208143949046"  /></p>
-<pre><code>name: Update Hugo
-     
+<pre tabindex="0"><code>name: Update Hugo
+
 on:
   push:
     branches:
       - master   # master 更新触发
-     
+
 jobs:
   build-deploy:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-     
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: latest
           extended: true
-     
+
       - name: Build 
         run: hugo
-     
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

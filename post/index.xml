@@ -6,7 +6,21 @@
     <description>Recent content in Posts on Trade0ff&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 14 Mar 2021 17:14:03 +0000</lastBuildDate><atom:link href="https://ICan1DO.github.io/my-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Apr 2021 20:36:13 +0000</lastBuildDate><atom:link href="https://ICan1DO.github.io/my-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tomcat项目部署</title>
+      <link>https://ICan1DO.github.io/my-blog/p/tomcat-setup-webapps/</link>
+      <pubDate>Thu, 01 Apr 2021 20:36:13 +0000</pubDate>
+      
+      <guid>https://ICan1DO.github.io/my-blog/p/tomcat-setup-webapps/</guid>
+      <description>Tomcat项目部署 部署方式   直接将项目文件放置在webapps目录下。
+ /example：项目的访问路径&amp;ndash;&amp;gt;虚拟目录 可将项目打包成.war格式，然后放置本目录下，Tomcat会自动解压    配置conf/sever.xml
+在&amp;lt;Host&amp;gt;标签中配置
+&amp;lt;Context docBase=&amp;#34;C:\example&amp;#34; path=&amp;#34;/example&amp;#34;&amp;gt; &amp;lt;!--docBase:项目存放的路径 path:虚拟目录--&amp;gt;   在conf/Catalina/localhost中创建xml文件（例如：example.xml）。
+&amp;lt;Context docBase=&amp;#34;C:\example&amp;#34;&amp;gt; &amp;lt;!--虚拟目录：xml的文件名称(example)--&amp;gt;   项目目录简介 含静态项目和动态项目
+example //项目根目录 |_ WEB-INF |_ web.xml //web项目核心配置文件 |_ classes //放置字节码文件的目录 |_ lib //放置依赖的jar包 </description>
+    </item>
+    
     <item>
       <title>Java集合</title>
       <link>https://ICan1DO.github.io/my-blog/p/java-set/</link>

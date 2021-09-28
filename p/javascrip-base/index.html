@@ -70,7 +70,7 @@
                     
                     
                         
-                        <img src="/my-blog/img/pic_hue9c1f45c61fe4d5e9f53a6542ac1b807_92997_300x0_resize_box_2.png" width="300"
+                        <img src="/my-blog/img/pic_hue9c1f45c61fe4d5e9f53a6542ac1b807_92997_300x0_resize_box_3.png" width="300"
                             height="312" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -272,7 +272,7 @@
 <ol>
 <li>
 <p>创建方式</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//形参不需要填写数据类型，返回值也可以省略
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//形参不需要填写数据类型，返回值也可以省略
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">fun1</span><span class="o">=</span><span class="k">new</span> <span class="kd">function</span><span class="p">(</span><span class="s2">&#34;a&#34;</span><span class="p">,</span><span class="s2">&#34;b&#34;</span><span class="p">,</span><span class="s2">&#34;alert(a+b)&#34;</span><span class="p">);</span> <span class="c1">//第一种方式
 </span><span class="c1"></span><span class="kd">function</span> <span class="nx">fun2</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
     <span class="nx">alert</span><span class="p">(</span><span class="nx">a</span><span class="o">+</span><span class="nx">b</span><span class="p">);</span>
@@ -297,14 +297,14 @@
 <ol>
 <li>
 <p>创建方式</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//数组长度可变，若没有赋值，则为undefined
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//数组长度可变，若没有赋值，则为undefined
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">arr1</span><span class="o">=</span><span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">);</span> <span class="c1">//1,2,3
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">arr2</span><span class="o">=</span><span class="k">new</span> <span class="nb">Array</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span> <span class="c1">//,,,
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">arr3</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="s2">&#34;abc&#34;</span><span class="p">,</span><span class="kc">true</span><span class="p">];</span><span class="c1">//1,2,3,abc,true
 </span></code></pre></div></li>
 <li>
 <p>方法</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">arr1</span><span class="p">.</span><span class="nx">join</span><span class="p">();</span> <span class="c1">//join(参数):按照指定字符串拼接数组。默认&#34;,&#34;
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">arr1</span><span class="p">.</span><span class="nx">join</span><span class="p">();</span> <span class="c1">//join(参数):按照指定字符串拼接数组。默认&#34;,&#34;
 </span><span class="c1"></span><span class="nx">arr2</span><span class="p">.</span><span class="nx">push</span><span class="p">();</span> <span class="c1">//push()：向数组末尾添加元素。
 </span></code></pre></div></li>
 </ol>
@@ -314,11 +314,11 @@
 <ol>
 <li>
 <p>创建方式</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">date</span><span class="o">=</span><span class="k">new</span> <span class="nb">Date</span><span class="p">();</span><span class="c1">//默认美国时间格式
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">date</span><span class="o">=</span><span class="k">new</span> <span class="nb">Date</span><span class="p">();</span><span class="c1">//默认美国时间格式
 </span></code></pre></div></li>
 <li>
 <p>方法</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">toLocaleString</span><span class="p">();</span><span class="c1">//toLocaleString()：转换为当地时间格式
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">toLocaleString</span><span class="p">();</span><span class="c1">//toLocaleString()：转换为当地时间格式
 </span><span class="c1"></span><span class="nx">getTime</span><span class="p">();</span><span class="c1">//获取毫秒值，与1970年1月1日比较
 </span></code></pre></div></li>
 </ol>
@@ -332,7 +332,7 @@
 </li>
 <li>
 <p>方法</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">;</span><span class="c1">//获取π值
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span><span class="p">;</span><span class="c1">//获取π值
 </span><span class="c1"></span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">();</span><span class="c1">//反悔[o,1)之前的随机数
 </span><span class="c1"></span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="mf">3.14</span><span class="p">);</span><span class="c1">//3 四舍五入
 </span><span class="c1"></span><span class="nb">Math</span><span class="p">.</span><span class="nx">ceil</span><span class="p">(</span><span class="mf">3.14</span><span class="p">);</span><span class="c1">//4 向上取整
@@ -346,7 +346,7 @@
 <ol>
 <li>
 <p>单个字符：[]</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">[</span><span class="nx">a</span><span class="p">]</span> <span class="c1">//字符a
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">[</span><span class="nx">a</span><span class="p">]</span> <span class="c1">//字符a
 </span><span class="c1"></span><span class="p">[</span><span class="nx">ab</span><span class="p">]</span> <span class="c1">//a或b
 </span><span class="c1"></span><span class="p">[</span><span class="nx">a</span><span class="o">-</span><span class="nx">z</span><span class="p">]</span> <span class="c1">//任意小写字符
 </span><span class="c1"></span><span class="err">\</span><span class="nx">d</span> <span class="c1">//单个数字，同[0-9]
@@ -354,7 +354,7 @@
 </span></code></pre></div></li>
 <li>
 <p>量词字符</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">?</span> <span class="c1">//表示出现0次或1次
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="o">?</span> <span class="c1">//表示出现0次或1次
 </span><span class="c1"></span><span class="o">*</span> <span class="c1">//表示出现0次或多次
 </span><span class="c1"></span><span class="o">+</span> <span class="c1">//表示出现1次或多次
 </span><span class="c1"></span><span class="p">{</span><span class="nx">m</span><span class="p">,</span><span class="nx">n</span><span class="p">}</span> <span class="c1">//表示 m&lt;=次数&lt;=n
@@ -364,12 +364,12 @@
 <ol>
 <li>
 <p>创建方式</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">reg</span><span class="o">=</span><span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="s2">&#34;^\w{6,12}$&#34;</span><span class="p">);</span> <span class="c1">//表示6-12个字符
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">reg</span><span class="o">=</span><span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="s2">&#34;^\w{6,12}$&#34;</span><span class="p">);</span> <span class="c1">//表示6-12个字符
 </span><span class="c1"></span><span class="kd">let</span> <span class="nx">reg</span><span class="o">=</span><span class="sr">/^\w{6,12}$/</span><span class="p">;</span>
 </code></pre></div></li>
 <li>
 <p>方法</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">reg</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&#34;Tred0ff&#34;</span><span class="p">);</span> <span class="c1">//测试字符串是否符合定义规则。
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">reg</span><span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="s2">&#34;Tred0ff&#34;</span><span class="p">);</span> <span class="c1">//测试字符串是否符合定义规则。
 </span></code></pre></div></li>
 </ol>
 </li>
@@ -379,16 +379,16 @@
 <ol>
 <li>
 <p>方法</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">encodeURI</span><span class="p">();</span><span class="c1">//URL编码，一般只编码汉字
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nb">encodeURI</span><span class="p">();</span><span class="c1">//URL编码，一般只编码汉字
 </span><span class="c1"></span><span class="nb">decodeURI</span><span class="p">();</span><span class="c1">//URL解码
-</span><span class="c1"></span>     
+</span><span class="c1"></span>
 <span class="nx">encodeURICompare</span><span class="p">();</span><span class="c1">//URL编码,编码的字符更多，字符也编码
 </span><span class="c1"></span><span class="nx">decodeURICompare</span><span class="p">();</span><span class="c1">//URL解码
-</span><span class="c1"></span>     
+</span><span class="c1"></span>
 <span class="nb">parseInt</span><span class="p">();</span> <span class="c1">//逐一判断每一个字符是否是数字，知道不是数字为止。将前面数字转行为number
-</span><span class="c1"></span>     
+</span><span class="c1"></span>
 <span class="nb">isNaN</span><span class="p">();</span> <span class="c1">//判断传入值是否是NaN
-</span><span class="c1"></span>     
+</span><span class="c1"></span>
 <span class="nb">eval</span><span class="p">();</span> <span class="c1">//将javascript字符串转化为代码执行
 </span></code></pre></div></li>
 </ol>
@@ -399,12 +399,12 @@
 <ul>
 <li>
 <p>Document：文档对象</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//1. 获取Element对象
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//1. 获取Element对象
 </span><span class="c1"></span><span class="nx">getElementById</span><span class="p">();</span> <span class="c1">//通过元素ID获取Html元素
 </span><span class="c1"></span><span class="nx">getElementByTagName</span><span class="p">();</span> <span class="c1">//根据元素名称获取Html元素，返回数组[]
 </span><span class="c1"></span><span class="nx">getElementByClassName</span><span class="p">();</span> <span class="c1">//根据Class属性值获取元素对象们。返回数组[]
 </span><span class="c1"></span><span class="nx">getElementByName</span><span class="p">();</span> <span class="c1">//根据Name属性值获取元素对象，返回数组
-</span><span class="c1"></span>  
+</span><span class="c1"></span>
 <span class="c1">//2. 创建其他DOM对象
 </span><span class="c1"></span><span class="nx">createAttribute</span><span class="p">();</span>
 <span class="nx">createComment</span><span class="p">();</span>
@@ -413,20 +413,20 @@
 </code></pre></div></li>
 <li>
 <p>Element：元素对象</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//通过document对象获取和创建
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//通过document对象获取和创建
 </span><span class="c1"></span><span class="nx">setAttribute</span><span class="p">();</span> <span class="c1">//设置属性
 </span><span class="c1"></span><span class="nx">removeAttribute</span><span class="p">();</span> <span class="c1">//移除属性
 </span></code></pre></div></li>
 <li>
 <p>Node：节点对象，其他五个的父对象</p>
 <p>所有DOM对象都可以被人为是一个节点。</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//方法
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//方法
 </span><span class="c1"></span><span class="nx">appendChild</span><span class="p">();</span> <span class="c1">//添加子节点
 </span><span class="c1"></span><span class="nx">removeChild</span><span class="p">();</span> <span class="c1">//移除子节点
 </span><span class="c1"></span><span class="nx">replaceChild</span><span class="p">();</span> <span class="c1">//替换子节点
-</span><span class="c1"></span>  
+</span><span class="c1"></span>
 <span class="o">&lt;</span><span class="nx">a</span> <span class="nx">href</span><span class="o">=</span><span class="s2">&#34;javascript:void(0);&#34;</span><span class="o">&gt;</span><span class="nx">超链接</span><span class="o">&lt;</span><span class="sr">/a&gt; /</span><span class="o">/</span><span class="nx">javascript</span><span class="o">:</span><span class="k">void</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="nx">阻止返回值</span>
-  
+
 <span class="c1">//属性
 </span><span class="c1"></span><span class="nx">parentNode</span> <span class="c1">//获取当前节点的父节点
 </span></code></pre></div></li>
@@ -435,12 +435,12 @@
 <ol>
 <li>
 <p>获取元素</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">element</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">();</span> <span class="c1">//通过元素ID获取Html元素
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">element</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">();</span> <span class="c1">//通过元素ID获取Html元素
 </span><span class="c1"></span><span class="nx">element</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="s2">&#34;img/1.jpg&#34;</span> <span class="c1">//设置Html元素属性
 </span></code></pre></div></li>
 <li>
 <p>事件绑定</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//1.在Html标签元素中，指定时间属性
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//1.在Html标签元素中，指定时间属性
 </span><span class="c1"></span><span class="o">&lt;</span><span class="nx">img</span> <span class="nx">id</span><span class="o">=</span><span class="s2">&#34;car&#34;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&#34;img/car.jpg&#34;</span> <span class="nx">onclick</span><span class="o">=</span><span class="s2">&#34;functionName&#34;</span><span class="o">&gt;</span>
 <span class="c1">//2.js获取标签元素，获取事件属性
 </span><span class="c1"></span><span class="nx">element</span><span class="p">.</span><span class="nx">onclick</span><span class="o">=</span> <span class="nx">functionName</span><span class="p">;</span>
@@ -459,13 +459,13 @@
 </li>
 <li>
 <p>方法</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">alert</span><span class="p">();</span><span class="c1">//弹出提示框
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">alert</span><span class="p">();</span><span class="c1">//弹出提示框
 </span><span class="c1"></span><span class="nx">confirm</span><span class="p">();</span><span class="c1">//弹出选择框，返回true或false
 </span><span class="c1"></span><span class="nx">prompt</span><span class="p">();</span><span class="c1">//显示用户输入对话框，返回用户输入的内容
-</span><span class="c1"></span>     
+</span><span class="c1"></span>
 <span class="nx">open</span><span class="p">();</span> <span class="c1">//前台新建浏览器标签页，并返回window对象
 </span><span class="c1"></span><span class="nx">close</span><span class="p">();</span> <span class="c1">//关闭当前浏览器标签页
-</span><span class="c1"></span>     
+</span><span class="c1"></span>
 <span class="nx">setTimeout</span><span class="p">();</span> <span class="c1">//指定毫秒数后，调用函数或者表达式。参数可以是方法或者代码片段
 </span><span class="c1"></span><span class="nx">clearTimeout</span><span class="p">();</span> <span class="c1">//取消setTimeout()方法设置的Timeout
 </span><span class="c1"></span><span class="nx">setInterval</span><span class="p">();</span> <span class="c1">//按照指定的周期（毫秒）调用函数计算。参数可以是方法或者代码片段
@@ -492,8 +492,8 @@
 </li>
 <li>
 <p>Location：标签页地址对象</p>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">reload</span><span class="p">();</span> <span class="c1">// 刷新当前页面
-</span><span class="c1"></span>  
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">reload</span><span class="p">();</span> <span class="c1">// 刷新当前页面
+</span><span class="c1"></span>
 <span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">;</span><span class="c1">//url地址href属性
 </span></code></pre></div></li>
 </ul>
@@ -533,6 +533,18 @@
         <h2 class="section-title">相关文章</h2>
         <div class="related-contents">
             <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/my-blog/p/tomcat-setup-webapps/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Tomcat项目部署</h2>
+        </div>
+    </a>
+</article>
                 
                     
 <article class="">
