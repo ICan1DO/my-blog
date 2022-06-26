@@ -245,19 +245,19 @@
 <li>
 <p>Collection</p>
 <p>集合接口层级的底层。Java平台并不提供任何对Collection接口的直接实现，但是提供更加详细的对子接口的实现，诸如Set和List接口。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="c1">//基本操作方法
-</span><span class="c1"></span><span class="n">size</span><span class="o">();</span> <span class="c1">//返回集合中元素个数
-</span><span class="c1"></span><span class="n">isEmpty</span><span class="o">();</span> <span class="c1">//判断集合是否为空
-</span><span class="c1"></span><span class="n">contains</span><span class="o">();</span> <span class="c1">//是否包含某个元素
-</span><span class="c1"></span><span class="n">add</span><span class="o">();</span> <span class="c1">//添加元素，成功返回True
-</span><span class="c1"></span><span class="n">remove</span><span class="o">();</span> <span class="c1">//移除元素
-</span><span class="c1"></span><span class="n">iterator</span><span class="o">();</span> <span class="c1">//迭代器
-</span><span class="c1"></span><span class="n">hasNext</span><span class="o">();</span> <span class="c1">//是有含有下一个元素，并且返回下一个元素
-</span><span class="c1"></span>
-<span class="n">collection</span><span class="o">.</span><span class="na">removeAll</span><span class="o">(</span><span class="n">Collection</span><span class="o">.</span><span class="na">singleton</span><span class="o">());</span> <span class="c1">//Collections.singleton是一个静态工厂方法，返回一个只包含指定元素的不可变的Set集合。例如Collections.Singleton(e)方法返回只包含元素e的Set集合，然后集合c调用removeAll方法删除c中所有元素e的实例。同样，Collections.Singleton(null)方法返回只包含元素null的Set集合，然后集合c调用removeAll方法删除c中所有null元素。
-</span><span class="c1"></span>
-<span class="n">toArray</span><span class="o">();</span> <span class="c1">//方法主要是作为集合和老的期望输入数组的API之间的桥梁。数组操作允许Collection中的内容被转换到一个数组中去
-</span></code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Java" data-lang="Java"><span class="line"><span class="cl"><span class="c1">//基本操作方法
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">size</span><span class="o">();</span> <span class="c1">//返回集合中元素个数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">isEmpty</span><span class="o">();</span> <span class="c1">//判断集合是否为空
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">contains</span><span class="o">();</span> <span class="c1">//是否包含某个元素
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">add</span><span class="o">();</span> <span class="c1">//添加元素，成功返回True
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">remove</span><span class="o">();</span> <span class="c1">//移除元素
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">iterator</span><span class="o">();</span> <span class="c1">//迭代器
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">hasNext</span><span class="o">();</span> <span class="c1">//是有含有下一个元素，并且返回下一个元素
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="n">collection</span><span class="o">.</span><span class="na">removeAll</span><span class="o">(</span><span class="n">Collection</span><span class="o">.</span><span class="na">singleton</span><span class="o">());</span> <span class="c1">//Collections.singleton是一个静态工厂方法，返回一个只包含指定元素的不可变的Set集合。例如Collections.Singleton(e)方法返回只包含元素e的Set集合，然后集合c调用removeAll方法删除c中所有元素e的实例。同样，Collections.Singleton(null)方法返回只包含元素null的Set集合，然后集合c调用removeAll方法删除c中所有null元素。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl"><span class="n">toArray</span><span class="o">();</span> <span class="c1">//方法主要是作为集合和老的期望输入数组的API之间的桥梁。数组操作允许Collection中的内容被转换到一个数组中去
+</span></span></span></code></pre></div><ul>
 <li>
 <p>Set</p>
 <p>不能包含重复元素的集合</p>
@@ -418,7 +418,7 @@
         
             2020 - 
         
-        2021 Trade0ff&#39;s Blog
+        2022 Trade0ff&#39;s Blog
     </section>
     
     <section class="powerby">

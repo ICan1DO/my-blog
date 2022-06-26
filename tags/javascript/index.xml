@@ -13,15 +13,20 @@
       <pubDate>Mon, 08 Mar 2021 13:33:03 +0000</pubDate>
       
       <guid>https://ICan1DO.github.io/my-blog/p/javascrip-base/</guid>
-      <description>JavaScript基础 数据类型  原始数据类型（基本数据类型）  number：数字。整数/小数/NaN（not a number） string：字符串 boolean：true/false null：false undefined：false   引用数据类型：对象  变量 var 变量名 = 初始化值;
+      <description>JavaScript基础 数据类型 原始数据类型（基本数据类型） number：数字。整数/小数/NaN（not a number） string：字符串 boolean：true/false null：false undefined：false 引用数据类型：对象 变量 var 变量名 = 初始化值;
 typeof(变量名)：获取变量的数据类型
-类型转换  number：0或NaN为false，其他为true string：“”为false，其他为true null：false undefined：false 对象：所有对象都为true  对象   Function方法对象
-  创建方式
-//形参不需要填写数据类型，返回值也可以省略 let fun1=new function(&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;,&amp;#34;alert(a+b)&amp;#34;); //第一种方式 function fun2(a,b){ alert(a+b); }; //第二种方式 let fun3=function fun(a,b){ alert(a+b); }; //第三种方式   重名及参数相同：方法重名且参数相同，方法会被覆盖。
-  方法调用：方法调用只与方法的名称有关，和参数列表无关。
-  传入参数：JS方法声明中有一个隐藏的内置对象（数组：arguments），封装所得的实际参数。
-    Array数组对象
-  创建方式</description>
+类型转换 number：0或NaN为false，其他为true string：“”为false，其他为true null：false undefined：false 对象：所有对象都为true 对象 Function方法对象
+创建方式
+//形参不需要填写数据类型，返回值也可以省略 let fun1=new function(&amp;#34;a&amp;#34;,&amp;#34;b&amp;#34;,&amp;#34;alert(a+b)&amp;#34;); //第一种方式 function fun2(a,b){ alert(a+b); }; //第二种方式 let fun3=function fun(a,b){ alert(a+b); }; //第三种方式 重名及参数相同：方法重名且参数相同，方法会被覆盖。
+方法调用：方法调用只与方法的名称有关，和参数列表无关。
+传入参数：JS方法声明中有一个隐藏的内置对象（数组：arguments），封装所得的实际参数。
+Array数组对象
+创建方式
+//数组长度可变，若没有赋值，则为undefined let arr1=new Array(1,2,3); //1,2,3 let arr2=new Array(4); //,,, let arr3=[1,2,3,&amp;#34;abc&amp;#34;,true];//1,2,3,abc,true 方法
+arr1.join(); //join(参数):按照指定字符串拼接数组。默认&amp;#34;,&amp;#34; arr2.push(); //push()：向数组末尾添加元素。 Data日期对象
+创建方式
+let date=new Date();//默认美国时间格式 方法
+toLocaleString();//toLocaleString()：转换为当地时间格式 getTime();//获取毫秒值，与1970年1月1日比较 Math数学对象</description>
     </item>
     
   </channel>

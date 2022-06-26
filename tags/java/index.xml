@@ -13,11 +13,11 @@
       <pubDate>Thu, 01 Apr 2021 20:36:13 +0000</pubDate>
       
       <guid>https://ICan1DO.github.io/my-blog/p/tomcat-setup-webapps/</guid>
-      <description>Tomcat项目部署 部署方式   直接将项目文件放置在webapps目录下。
- /example：项目的访问路径&amp;ndash;&amp;gt;虚拟目录 可将项目打包成.war格式，然后放置本目录下，Tomcat会自动解压    配置conf/sever.xml
+      <description>Tomcat项目部署 部署方式 直接将项目文件放置在webapps目录下。
+/example：项目的访问路径&amp;ndash;&amp;gt;虚拟目录 可将项目打包成.war格式，然后放置本目录下，Tomcat会自动解压 配置conf/sever.xml
 在&amp;lt;Host&amp;gt;标签中配置
-&amp;lt;Context docBase=&amp;#34;C:\example&amp;#34; path=&amp;#34;/example&amp;#34;&amp;gt; &amp;lt;!--docBase:项目存放的路径 path:虚拟目录--&amp;gt;   在conf/Catalina/localhost中创建xml文件（例如：example.xml）。
-&amp;lt;Context docBase=&amp;#34;C:\example&amp;#34;&amp;gt; &amp;lt;!--虚拟目录：xml的文件名称(example)--&amp;gt;   项目目录简介 含静态项目和动态项目
+&amp;lt;Context docBase=&amp;#34;C:\example&amp;#34; path=&amp;#34;/example&amp;#34;&amp;gt; &amp;lt;!--docBase:项目存放的路径 path:虚拟目录--&amp;gt; 在conf/Catalina/localhost中创建xml文件（例如：example.xml）。
+&amp;lt;Context docBase=&amp;#34;C:\example&amp;#34;&amp;gt; &amp;lt;!--虚拟目录：xml的文件名称(example)--&amp;gt; 项目目录简介 含静态项目和动态项目
 example //项目根目录 |_ WEB-INF |_ web.xml //web项目核心配置文件 |_ classes //放置字节码文件的目录 |_ lib //放置依赖的jar包 </description>
     </item>
     
@@ -27,27 +27,30 @@ example //项目根目录 |_ WEB-INF |_ web.xml //web项目核心配置文件 |_
       <pubDate>Sun, 14 Mar 2021 17:14:03 +0000</pubDate>
       
       <guid>https://ICan1DO.github.io/my-blog/p/java-set/</guid>
-      <description>Java集合   Collection
+      <description>Java集合 Collection
 集合接口层级的底层。Java平台并不提供任何对Collection接口的直接实现，但是提供更加详细的对子接口的实现，诸如Set和List接口。
-//基本操作方法 size(); //返回集合中元素个数 isEmpty(); //判断集合是否为空 contains(); //是否包含某个元素 add(); //添加元素，成功返回True remove(); //移除元素 iterator(); //迭代器 hasNext(); //是有含有下一个元素，并且返回下一个元素  collection.removeAll(Collection.singleton()); //Collections.singleton是一个静态工厂方法，返回一个只包含指定元素的不可变的Set集合。例如Collections.Singleton(e)方法返回只包含元素e的Set集合，然后集合c调用removeAll方法删除c中所有元素e的实例。同样，Collections.Singleton(null)方法返回只包含元素null的Set集合，然后集合c调用removeAll方法删除c中所有null元素。  toArray(); //方法主要是作为集合和老的期望输入数组的API之间的桥梁。数组操作允许Collection中的内容被转换到一个数组中去   Set
+//基本操作方法 size(); //返回集合中元素个数 isEmpty(); //判断集合是否为空 contains(); //是否包含某个元素 add(); //添加元素，成功返回True remove(); //移除元素 iterator(); //迭代器 hasNext(); //是有含有下一个元素，并且返回下一个元素 collection.removeAll(Collection.singleton()); //Collections.singleton是一个静态工厂方法，返回一个只包含指定元素的不可变的Set集合。例如Collections.Singleton(e)方法返回只包含元素e的Set集合，然后集合c调用removeAll方法删除c中所有元素e的实例。同样，Collections.Singleton(null)方法返回只包含元素null的Set集合，然后集合c调用removeAll方法删除c中所有null元素。 toArray(); //方法主要是作为集合和老的期望输入数组的API之间的桥梁。数组操作允许Collection中的内容被转换到一个数组中去 Set
 不能包含重复元素的集合
-  SortedSet
+SortedSet
 元素按升序排列的Set。
-  HashSet
+HashSet
 HashSet，将其元素存储在一个哈希表中，它具有最好的性能实现；然而它不保证迭代的顺序。
-  TreeSet
+TreeSet
 TreeSet，将其元素存储在一个红黑树中，按元素的值顺序排列；本质上它比HashSet要慢。
-  LinkedHashSet
+LinkedHashSet
 LinkedHashSet，是作为一个哈希表实现的，用链表连接这些元素，按元素的插入顺序排列。
-    List
+List
 一个有序的集合。List可以包含重复的元素，并且List中的元素是有序排列的。
-  ArrayList
+ArrayList
 通常有较好的性能实现
-  LinkedList
+LinkedList
 在一定条件下提供较好的执行性能
-    Queue
+Queue
 是一个其元素带有先后处理顺序的集合。队列通常（但不是必需的）以一种FIFO（先进先出）的形式管理元素。
-    Map</description>
+Map
+一个将键映射到值的对象。Map不能包含重复的键；每个键最多能映射到一个值（值之间可以重复）。
+SortMap
+映射关系按键的升序排列的Map。</description>
     </item>
     
   </channel>
