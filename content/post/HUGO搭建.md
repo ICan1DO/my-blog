@@ -20,15 +20,15 @@ HUGO主题下载：[主题](https://themes.gohugo.io/)	本博客使用的主题�
 
   1. 按照上述文章搭建完成后，如果需要更换主题，把下载完成的主题解压至博客文件路径，目录`*/temes`下，文件夹名称可修改，这里博主改为`stack`。
 
-     ![image-20210208141813462](https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208141813462.png)
+     ![image-20210208141813462](https://raw.githubusercontents.com/ICan1DO/Figurebed/master/img/image-20210208141813462.png)
 
   2. 打开主题文件夹，进入`exampleSite`，将文件夹内的所有文件复制到伯博客文件夹主目录下并替换（红框中的文件建议必选，其中`congfig.yaml`主题配置文件）。
 
-     ![image-20210208142119064](https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208142119064.png)
+     ![image-20210208142119064](https://raw.githubusercontents.com/ICan1DO/Figurebed/master/img/image-20210208142119064.png)
 
   3. 回到主目录删除除`congfig.yaml`外的其他格式配置文件。然后打开文件该文件，修改博客地址、主题文件夹名称（博主为`stack`）。
 
-     ![image-20210208142459809](https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208142459809.png)
+     ![image-20210208142459809](https://raw.githubusercontents.com/ICan1DO/Figurebed/master/img/image-20210208142459809.png)
 
      其余配置文件信息，参考主题说明文档。stack主题文档地址：https://docs.stack.jimmycai.com/v/zh-cn/
 
@@ -42,11 +42,11 @@ HUGO主题下载：[主题](https://themes.gohugo.io/)	本博客使用的主题�
 
   5. 我们打卡GitHub博客项目，打开`.github/workflows`
 
-     ![image-20210208143255123](https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208143255123.png)
+     ![image-20210208143255123](https://raw.githubusercontents.com/ICan1DO/Figurebed/master/img/image-20210208143255123.png)
 
   6. 打开`***.yml`文件，也就是你之前创建的自动化文件。添加`extended: true`，因为部分主题需要用到hugo的extented版本才可编译成功。
 
-     ![image-20210208143949046](https://gitee.com/Dontao/imgbed/raw/master/imgs/image-20210208143949046.png)
+     ![image-20210208143949046](https://raw.githubusercontents.com/ICan1DO/Figurebed/master/img/image-20210208143949046.png)
 
      ```
      name: Update Hugo
